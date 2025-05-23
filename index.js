@@ -7,7 +7,7 @@ const app = express();
 const port = 3000;
 
 app.use(cors({
-  origin: ["http://127.0.0.1:5500" , "https://www.uniccbazar.shop"], // Replace with your front-end origin
+  origin: "*", // Replace with your front-end origin
   methods: ["GET", "POST", "PUT", "DELETE"], // Allowed HTTP methods
   allowedHeaders: ["Content-Type", "Authorization"] // Allowed headers
 }));
